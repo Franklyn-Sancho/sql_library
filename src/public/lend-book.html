@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lend a Book</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./active_loans.html">Active Loans</a></li>
+                <li><a href="./return.html">Return a Book</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Lend a Book</h2>
+        <form id="lend-form">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            
+            <label for="bookId">Book ID:</label>
+            <input type="text" id="bookId" name="bookId" required>
+            
+            <button type="submit">Lend Book</button>
+        </form>
+        <div id="response-message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
+
